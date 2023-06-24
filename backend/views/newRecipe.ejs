@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Recipe</title>
+</head>
+<body>
+
+   
+
+    <%-include("navbar.ejs")%>
+    <h2>Add Recipe</h2>
+    <form action="/recipe/save" method="post" >
+        <label>
+            Recipe Title:
+            <input  type="text" name="title" placeholder="Enter recipt title"/>
+        </label><br>
+        <label>
+            Description:
+            <input  type="text" name="description" placeholder="Enter Description"/>
+        </label><br>
+        <label>
+            Ingredients:
+            <input  type="text" name="ingredients" placeholder="Enter Ingredients"/>
+        </label>
+        <br>
+        <label>
+            Instructions:
+            <input  type="text" name="instructions" placeholder="Enter Instructions"/>
+        </label><br>
+        <input class="ss" type="submit" value="Save">
+    </form>
+
+<style>
+
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #233588;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2f78b4;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+        label { 
+
+        font-size:x-large;
+
+       }
+
+       input{
+        
+        font-size: 20px;
+
+       }
+
+       .ss{
+       
+        background-color: rgb(165, 165, 245);
+        border-color: transparent;
+        border-radius: 1.5em;
+        cursor: pointer;
+       }
+
+
+
+      </style>
+
+</body>
+</html>
